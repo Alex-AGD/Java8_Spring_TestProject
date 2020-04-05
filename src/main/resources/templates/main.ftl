@@ -2,6 +2,8 @@
 
 <title> Main page</title>
 <@c.page></@c.page>
+<style type="text/css"></style>
+
 <style>
     body {
         background: url(https://clipart-db.ru/file_content/rastr/background_065.jpg) repeat-x 0 100% fixed,

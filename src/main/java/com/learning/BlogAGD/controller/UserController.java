@@ -13,12 +13,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @Controller
+
 @RequestMapping("/user") // при get запросе к текущему мету пусть будет сожерадть user
 
 public class UserController {
     @Autowired
     private UserService userService;
-
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping
     public String userList(Model model) {
         model.addAttribute("users", userService.findAll());
@@ -35,7 +36,7 @@ public class UserController {
         return "userEdit";
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')")
+
     @PostMapping
     public String userSave(
             @RequestParam String username,

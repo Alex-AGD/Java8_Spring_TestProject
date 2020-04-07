@@ -1,4 +1,4 @@
-
+<#include "security.ftl">
 
 <#macro login path isRegisterForm>
 

@@ -28,9 +28,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     </head>
-
+    <body>
     <#include "navbar.ftl">
-    <div class="container ">
+    <div class="container mt-5">
         <#nested>
     </div>
     <!-- Optional JavaScript -->
@@ -45,7 +45,6 @@
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
     </body>
-    </html>
-
+</html>
 </#macro>
 

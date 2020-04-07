@@ -1,5 +1,6 @@
 <#include "common.ftl">
 <#import "login.ftl" as l>
+<#include "security.ftl">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/">Main</a>
@@ -18,7 +19,7 @@
                 </#if>
 
         </ul>
-<#--        <li class="navbar-text mr-3"><#if user??>${  }<#else>Please, login</#if></li>-->
+      <li class="navbar-text mr-3"><#if user??>${name}<#else>Please, login</#if></li>
 
         <div class="dropdown mr-3">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"

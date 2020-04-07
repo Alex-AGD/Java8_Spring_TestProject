@@ -27,12 +27,13 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </li>
-
-
         </ul>
 
-            <li class="navbar-nav  md-auto">
-                <a><@l.logout /></a>
+         <li class="navbar-text mr-3">
+            <#if user??>${name}<#else>Please, login</#if>
             </li>
+
+        </div>
+        <@l.logout />
     </div>
 </nav>

@@ -3,9 +3,13 @@
     <html lang="en">
 
     <head>
+        <meta name="keywords" content="blog, learn, media, gallery">     <#-- индексация для робота-->
+        <meta name="description" content="Learning site java,css,html,bootstrap">     <#-- seo-->
         <meta charset="UTF-8">
         <title>MyBlog</title>
-        <#--<link rel="stylesheet" href="/static/style.css">-->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+
 
         <#--        плотность пикселей на экр устр-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,10 +23,13 @@
               integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
               crossorigin="anonymous">
 
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
     </head>
-    <body>
+
     <#include "navbar.ftl">
-    <div class="container mt-5">
+    <div class="container ">
         <#nested>
     </div>
     <!-- Optional JavaScript -->
@@ -38,5 +45,6 @@
             crossorigin="anonymous"></script>
     </body>
     </html>
+
 </#macro>
 

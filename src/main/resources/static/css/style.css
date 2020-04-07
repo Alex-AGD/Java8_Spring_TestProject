@@ -1,0 +1,9 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: url(/img/57ab9564cf1cb156763f91f0.png) center no-repeat;
+    background-size: cover;
+}
+

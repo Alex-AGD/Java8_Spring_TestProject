@@ -4,7 +4,12 @@
 <title> Main page</title>
 
 <@c.page>
-    <h4 class="display-3"> Hello ${name} Please login </h4>
+
+    <#if user??>  <h1 class="display-5"> Hello ${name}  have a good day :) </h1>
+
+        <#else> <h6 class="display-5"> Hello ${name} Please login  </h6>
+    </#if>
+
 </@c.page>
 
 

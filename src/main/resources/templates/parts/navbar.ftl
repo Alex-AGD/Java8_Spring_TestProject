@@ -26,10 +26,13 @@
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 User Info
             </button>
+
+
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="/user/profile">Profile</a>
                 <a class="dropdown-item" href="/user">User list</a>
             </div>
+
 
         </div>
         <@l.logout />

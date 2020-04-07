@@ -32,10 +32,10 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="input03">Email</label> <input type="email" class="form-control" id="input03" value="bent10@looper.com" required="">
+                        <label for="input03">Email</label> <input type="email" class="form-control" id="input03" placeholder="Enter your email" >
                     </div>
                     <div class="form-group">
-                        <label for="input04">New Password</label> <input type="password" name="password" value="secret" class="form-control" id="input04" required="">
+                        <label for="input04">New Password</label> <input type="password" name="password" placeholder="Password" class="form-control" id="input04">
                     </div>
                     <div class="form-group">
                         <label for="input05">Username</label> <input type="text" class="form-control" id="input05" value="${username}" required="">

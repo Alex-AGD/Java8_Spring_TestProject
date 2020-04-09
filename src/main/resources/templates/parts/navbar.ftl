@@ -21,20 +21,19 @@
         </ul>
       <li class="navbar-text mr-3"><#if user??>${name}<#else>Please, login</#if></li>
 
-        <div class="dropdown mr-3">
+        <div class="dropdown mb-auto mr-3 " >
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 User Info
             </button>
-
-
+        </div>
+            <#if user??>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="/user/profile">Profile</a>
                 <a class="dropdown-item" href="/user">User list</a>
             </div>
+            </#if>
 
-
-        </div>
         <@l.logout />
     </div>
 </nav>

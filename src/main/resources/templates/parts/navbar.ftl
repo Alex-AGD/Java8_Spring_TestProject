@@ -10,8 +10,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
                 <#if user??>
             <li class="nav-item">
@@ -21,19 +20,21 @@
         </ul>
       <li class="navbar-text mr-3"><#if user??>${name}<#else>Please, login</#if></li>
 
-        <div class="dropdown mb-auto mr-3 " >
+        <div class="dropdown  md-2 mr-2 mt-2 mt-lg-0 "  >
+
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 User Info
             </button>
-        </div>
-            <#if user??>
+
+
+
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="/user/profile">Profile</a>
                 <a class="dropdown-item" href="/user">User list</a>
             </div>
-            </#if>
 
+        </div>
         <@l.logout />
     </div>
 </nav>

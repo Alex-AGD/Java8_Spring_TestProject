@@ -18,6 +18,10 @@ public class User implements UserDetails {
     private String lastName;
 
 
+    private String email;
+    private String activationCode;
+
+
     private String password;
     private boolean active;
 
@@ -62,6 +66,7 @@ public class User implements UserDetails {
         this.active = active;
     }
 
+
     public Set<Role> getRoles() {
         return roles;
     }
@@ -84,6 +89,23 @@ public class User implements UserDetails {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getActivationCode() {
+        return activationCode;
+    }
+
+    public void setActivationCode(String activationCode) {
+        this.activationCode = activationCode;
     }
 
     @Override

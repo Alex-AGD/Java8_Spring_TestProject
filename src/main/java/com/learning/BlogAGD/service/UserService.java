@@ -19,6 +19,10 @@ public class UserService implements UserDetailsService {
     @Autowired
     UserRepo userRepo;
 
+    @Autowired
+    MailSender mailSender;
+
+
     public UserService(UserRepo userRepo) {
         this.userRepo = userRepo;
     }
@@ -39,9 +43,25 @@ public class UserService implements UserDetailsService {
             return false;
         }
 
-        user.setActive(true);
+        user.setActive(false);
         user.setRoles(Collections.singleton(Role.USER));
+        user.setActivationCode(UUID.randomUUID().toString());
+
         userRepo.save(user);
+
+        if (!StringUtils.isEmpty(user.getEmail())) {
+            String message = String.format(
+                    "Hello, %s! \n" +
+                            "Welcome to my Blog \n"  +
+                            /*"Please visit next link: https://agd-test-blog.herokuapp.com/activate/%s",*/
+                    "Please visit next link: http://localhost:8080/activate/%s",
+
+                    user.getUsername(),
+                    user.getActivationCode()
+            );
+
+            mailSender.send(user.getEmail(), "Activation code", message);
+        }
 
         return true;
     }
@@ -84,4 +104,15 @@ public class UserService implements UserDetailsService {
     }
 
 
+    public boolean activateUser(String code) {
+        User user = userRepo.findByActivationCode(code);
+        if (user == null) {
+            return false;
+        }
+        user.setActivationCode(null);
+        user.setActive(true);
+
+        userRepo.save(user);
+        return true;
+    }
 }

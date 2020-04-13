@@ -14,7 +14,7 @@ html,body{
 }
 
 .card{
-    height: 370px;
+    height: 390px;
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
@@ -22,9 +22,9 @@ html,body{
 }
 
 .social_icon span{
-    font-size: 60px;
+    font-size: 35px;
     margin-left: 10px;
-    color: #FFC312;
+    color: #003580;
 }
 
 .social_icon span:hover{
@@ -38,13 +38,13 @@ html,body{
 
 .social_icon{
     position: absolute;
-    right: 20px;
-    top: -45px;
+    right: 1px;
+    top: 380px;
 }
 
 .input-group-prepend span{
     width: 50px;
-    background-color: #FFC312;
+    background-color: #80ab87;
     color: black;
     border:0 !important;
 }
@@ -68,14 +68,20 @@ input:focus{
 }
 
 .login_btn{
-    color: black;
-    background-color: #FFC312;
+    color: #003580;
     width: 100px;
 }
 
+
+.btn-outline-primary{
+    color: #97fff8;
+    width: 300px;
+}
+
+
 .login_btn:hover{
-    color: black;
-    background-color: white;
+    color: #2898ff;
+    background-color: #a9fcff;
 }
 
 .links{
@@ -85,3 +91,4 @@ input:focus{
 .links a{
     margin-left: 4px;
 }
+

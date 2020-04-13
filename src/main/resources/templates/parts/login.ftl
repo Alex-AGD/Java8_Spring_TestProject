@@ -25,12 +25,21 @@
                                 <input type="text" name="username" class="form-control" placeholder="username">
 
                             </div>
+
                             <div class="input-group form-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-key"></i></span>
                                 </div>
                                 <input type="password" name="password" class="form-control" placeholder="password">
                             </div>
+
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                </div>
+                                <input type="email" name="email" class="form-control" placeholder="email">
+                            </div>
+
                             <div class="row align-items-center remember">
                                 <input type="checkbox">Remember Me
                             </div>

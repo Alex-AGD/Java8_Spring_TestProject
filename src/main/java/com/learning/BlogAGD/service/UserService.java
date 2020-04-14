@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -17,11 +18,13 @@ import java.util.stream.Collectors;
 public class UserService implements UserDetailsService {
 
     @Autowired
-    UserRepo userRepo;
+    private UserRepo userRepo;
 
     @Autowired
-    MailSender mailSender;
+    private MailSender mailSender;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public UserService(UserRepo userRepo) {
         this.userRepo = userRepo;
@@ -47,7 +50,7 @@ public class UserService implements UserDetailsService {
         user.setActive(false);
         user.setRoles(Collections.singleton(Role.USER));
         user.setActivationCode(UUID.randomUUID().toString());
-
+        user.setPassword(passwordEncoder.encode(user.getPassword())); //шиврование при ригистрации
         userRepo.save(user);
 
         sendMessage(user);

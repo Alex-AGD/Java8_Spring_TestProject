@@ -12,15 +12,15 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-                <#if user??>
+            <#if user??>
             <li class="nav-item">
                 <a class="nav-link" href="/user/profile">My Profile</a>
                 </#if>
-
         </ul>
-      <li class="navbar-text mr-3"><#if user??>${name}<#else>Please, login</#if></li>
 
-        <div class="dropdown  md-2 mr-2 mt-2 mt-lg-0 "  >
+        <li class="navbar-text mr-3"><#if user??>${name}<#else>Please, login</#if></li>
+
+        <div class="dropdown  md-2 mr-2 mt-2 mt-lg-0 ">
 
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -28,13 +28,12 @@
             </button>
 
 
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-menu mr-3" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="/user/profile">Profile</a>
                 <a class="dropdown-item" href="/user">User list</a>
             </div>
-
         </div>
+
         <@l.logout />
     </div>
 </nav>

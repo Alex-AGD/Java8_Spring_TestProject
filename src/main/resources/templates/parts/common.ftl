@@ -9,6 +9,8 @@
         <title>MyBlog</title>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
+        <frame-options policy="SAMEORIGIN"></frame-options>
+
 
         <#--        плотность пикселей на экр устр-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,14 +27,14 @@
         <!-- Scrollbar Custom CSS -->
         <link rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
-
     </head>
+
+
     <body>
     <#include "navbar.ftl">
-    <div class="container mt-5" mt>
-        <#nested>
-    </div>
+    <#nested>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -9,6 +9,7 @@
 </div>
 
  <div class="intro_content">
+
   <div class="container">
    <div class="d-flex justify-content-center h-100">
     <div class="card">
@@ -47,9 +48,6 @@
 
 
 
-
-
-
             <div class="input-group form-group">
              <div class="input-group-prepend">
                <span class="input-group-text"><i class="fas fa-key"></i></span>
@@ -66,7 +64,6 @@
             </div>
 
                <#if isRegisterForm>
-
                 <div class="input-group form-group">
                  <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-key"></i></span>
@@ -93,11 +90,19 @@
                      </div>
                      </#if>
 
+
+
                      <div class="row align-items-center remember">
+                      <#if isRegisterForm>
+                      <#else>
                      <input type="checkbox">Remember Me
+                     </#if>
                      </div>
+
+
+
                       <div class="form-group">
-                       <input type="submit" class="btn float-right login_btn"
+                       <input type="submit" class="btn btn-outline-success  float-right"
                         <#if isRegisterForm>value="Create"
                          <#else>value="Login"
                         </#if>>

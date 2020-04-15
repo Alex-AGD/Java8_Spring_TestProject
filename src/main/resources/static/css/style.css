@@ -51,17 +51,13 @@ html,body{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 78%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 3;
 }
 
-.container{
-    max-height: 1200px;
-    margin: 0 auto;
-}
 
 .intro_title{
     margin: 0;
@@ -71,30 +67,17 @@ html,body{
 }
 
 
-/*html,body{
-    background-image: url(/img/57ab9564cf1cb156763f91f0.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    font-family: 'Numans', sans-serif;
-}*/
-
-.container{
-    height: 100%;
-    align-content: center;
-}
-
 .card{
-    height: 390px;
+    height: 420px;
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
-    background-color: rgba(0,0,0,0.5) !important;
+    background-color: rgba(0,0,0,0.4) !important;
 }
 
 .social_icon span{
     font-size: 35px;
-    margin-left: 10px;
+    margin-left: 3px;
     color: #003580;
 }
 
@@ -110,7 +93,7 @@ html,body{
 .social_icon{
     position: absolute;
     right: 1px;
-    top: 380px;
+    top: 7px;
 }
 
 .input-group-prepend span{
@@ -138,22 +121,7 @@ input:focus{
     margin-right: 5px;
 }
 
-.login_btn{
-    color: #003580;
-    width: 100px;
-}
 
-
-.btn-outline-primary{
-    color: #97fff8;
-    width: 300px;
-}
-
-
-.login_btn:hover{
-    color: #2898ff;
-    background-color: #a9fcff;
-}
 
 .links{
     color: white;
@@ -162,5 +130,14 @@ input:focus{
 .links a{
     margin-left: 4px;
 }
+
+.display-5{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-family: monospace;
+    font-weight: 400;
+}
+
+
 
 

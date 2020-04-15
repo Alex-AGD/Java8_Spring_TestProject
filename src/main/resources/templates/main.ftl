@@ -12,12 +12,16 @@
 
     <div class="intro_content">
         <div class="container">
-            <#if user??>  <h1 class="display-5"> Hello ${name} have a good day :) </h1>
-            <#else> <h6 class="display-5"> Hello ${name} Please login </h6>
+            <#if user??>  <h2 class="display-5"> Hello ${name} have a good day :) </h2>
+            <#else> <h2 class="display-5"> Hello ${name} Please login </h2>
             </#if>
+
         </div>
     </div>
 </div>
+
+
+
 
 
 </@c.page>

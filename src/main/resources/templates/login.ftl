@@ -3,8 +3,16 @@
 
 
 <@c.page>
-    <title> Login page</title>
+    <#if Session?? && Session.SPRING_SECURITY_LAST_EXCEPTION??>
+        <div class="invalid-feedback">
+            ${Session.SPRING_SECURITY_LAST_EXCEPTION.message}
+        </div>
+    </#if>
+    <#if message??>
+        <div class="invalid-feedback">
+            ${message}
+        </div>
+    </#if>
 
-    ${message?ifExists}
     <@l.login "/login" false/>
 </@c.page>

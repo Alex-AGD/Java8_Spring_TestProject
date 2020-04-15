@@ -4,6 +4,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import java.util.Collection;
 import java.util.Set;
 
@@ -13,16 +15,24 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @NotBlank(message = "Username cannot be empty")
     private String username;
+
     private String fistName;
     private String lastName;
 
-
+    @Email (message = "Email is not correct")
+    @NotBlank(message = "Email cannot be empty")
     private String email;
     private String activationCode;
 
-
+    @NotBlank(message = "Password cannot be empty")
     private String password;
+
+    @Transient //говорит hibirnate для того что бы не получал это поле с базы данных
+    @NotBlank(message = "Password confirmation be empty")
+    private String password2;
     private boolean active;
 
     public boolean isAdmin(){
@@ -137,4 +147,11 @@ public class User implements UserDetails {
         return getRoles();
     }
 
+    public String getPassword2() {
+        return password2;
+    }
+
+    public void setPassword2(String password2) {
+        this.password2 = password2;
+    }
 }

@@ -92,6 +92,7 @@
 
 
 
+
                      <div class="row align-items-center remember">
                       <#if isRegisterForm>
                       <#else>
@@ -112,6 +113,17 @@
             </#if>
 
 
+                        <#if isRegisterForm>
+                       <div class="input-group form-group">
+                       <div class="g-recaptcha" data-sitekey="6LfqHeoUAAAAAI-ux7Rgg8O6QhbIGQy4bvrzksI3">
+                       <#if captchaError??>
+                            <div class="alert alert-danger" role="alert">
+                                ${captchaError}
+                            </div>
+                         </#if>
+                         </div>
+                      </#if>
+
 
                       <div class="form-group">
                        <input type="submit" class="btn btn-outline-success  float-right"
@@ -121,7 +133,12 @@
                        </div>
 
           </form>
+
+
     </div>
+
+
+
 
      <input type="hidden" name="_csrf" value="${_csrf.token}"/>
       <#if !isRegisterForm>

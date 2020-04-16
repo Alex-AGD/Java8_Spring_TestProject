@@ -70,7 +70,7 @@ public class UserService implements UserDetailsService {
             String message = String.format(
                     "Hello, %s! \n" +
                             "Welcome to my Blog \n" +
-                            /*"Please visit next link: https://agd-test-blog.herokuapp.com/activate/%s",*/
+                            /*"Please visit next link: https://agd-blog.herokuapp.com/activate/%s",*/
                             "Please visit next link: http://localhost:8080/activate/%s",
 
                     user.getUsername(),

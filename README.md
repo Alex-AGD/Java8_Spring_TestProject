@@ -6,5 +6,5 @@
 * SQL( Postgresql)
 *HTML CSS
 
-[Link Hiroku deploy](https://agd-blog.herokuapp.com/)
+[Link Heroku](https://agd-blog.herokuapp.com/)
 

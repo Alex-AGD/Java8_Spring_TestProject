@@ -80,6 +80,12 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
 
+        <!--migration db dep-->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-jdbc</artifactId>
+        </dependency>
+
     </dependencies>
 
 

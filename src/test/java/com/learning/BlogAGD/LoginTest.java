@@ -6,6 +6,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -16,7 +18,6 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-
 @TestPropertySource("/application-test.properties") //for test
 /*@ActiveProfiles("dev") //для dev properties*/
 @AutoConfigureMockMvc
@@ -39,25 +40,24 @@ public class LoginTest {
     }
 
     @Test
-    public void loginTest() throws Exception {
+    public void loginTest()throws Exception{
         this.mockMvc.perform(get("/main"))
                 .andDo(print())
                 .andExpect(status().is3xxRedirection())
                 .andExpect(redirectedUrl("http://localhost/login"));
 
-    }
-
+        }
     @Test
-    public void correctLoginTest() throws Exception {
-        this.mockMvc.perform(formLogin().user("admin").password("qqq"))
+    public void correctLoginTest()throws Exception{
+        this.mockMvc.perform(formLogin().user("admin").password("123"))
                 .andDo(print())
                 .andExpect(status().is3xxRedirection())
                 .andExpect(redirectedUrl("/"));
     }
 
     @Test
-    public void notCorrectLogin() throws Exception {
-        this.mockMvc.perform(post("/login").param("anon", "324"))
+    public void notCorrectLogin() throws Exception{
+        this.mockMvc.perform(post("/login").param("anon","324"))
                 .andDo(print())
                 .andExpect(status().isForbidden());
     }

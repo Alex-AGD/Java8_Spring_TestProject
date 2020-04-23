@@ -41,10 +41,10 @@ body,html{
 }
 
 .carousel-inner{
-    height: 500px;
+    height: 620px;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1500px) {
     .carousel-inner img{
         width: 100%;
     }
@@ -60,7 +60,7 @@ body,html{
 .carousel-caption{
     position: absolute;
     top: 50%;
-
+    padding-top: 97px;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 
 }
@@ -75,7 +75,7 @@ body,html{
 .jumbotron{
     padding: 1em;
     border-radius: 0;
-
+    text-align: center;
 }
 
 
@@ -85,7 +85,7 @@ body,html{
 
 
 .alert{
-    width: 75%;
+    width: 100%;
     margin: 0 auto ;
     padding-top: 2em;
 }
@@ -102,7 +102,7 @@ body,html{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 78%;
+    height: 42%;
     position: absolute;
     top: 0;
     left: 0;
@@ -112,8 +112,8 @@ body,html{
 
 .card{
     width: 100%;
-    max-width: 330px;
-    padding: 15px;
+    max-width: 345px;
+    padding: 0;
     margin: auto;
     background-color: rgba(0,0,0,0.4) !important;
     z-index: 3

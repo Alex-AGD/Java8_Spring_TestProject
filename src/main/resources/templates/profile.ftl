@@ -1,16 +1,9 @@
-<#import "parts/common.ftl" as c>
-
-<@c.page>
-
-    <div class="intro">
-    <div class="video">
-        <video class="video_media" src="media/bgvideo.mp4" autoplay muted loop></video>
-    </div>
-
+<#import "parts/common.ftl" as common>
+<@common.page>
 
     <form method="post">
     <div class="text-center">
-        <a class="user-avatar user-avatar-xl"><img src="assets/images/avatars/profile.jpg" alt=""></a>
+        <a class="user-avatar user-avatar-xl"><img src="img/logo.png" alt=""></a>
         <h2 class="h4 mt-2 mb-0"> ${fistName! ''} ${lastName! ''} </h2>
         <div class="my-1">
             <i class="fa fa-star has-text-black"></i>
@@ -60,4 +53,4 @@
             </div>
         </div>
     </div>
-</@c.page>
+</@common.page>

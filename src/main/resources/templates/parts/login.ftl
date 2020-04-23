@@ -89,8 +89,8 @@
                                 </#if>
 
                                 <#if isRegisterForm>
-                                <div class="input-group form-group">
-                                    <div class="g-recaptcha" data-sitekey="6LfqHeoUAAAAAI-ux7Rgg8O6QhbIGQy4bvrzksI3">
+                                <div class="input-group form-group" >
+                                    <div class="g-recaptcha сol-md-12" data-sitekey="6LfqHeoUAAAAAI-ux7Rgg8O6QhbIGQy4bvrzksI3">
                                         <#if captchaError??>
                                             <div class="alert alert-danger" role="alert">
                                                 ${captchaError}
@@ -100,7 +100,8 @@
                                     </#if>
 
                                     <div class="form-group">
-                                        <input type="submit" class="btn btn-outline-success  float-right" <#if isRegisterForm>value="Create"
+                                        <input type="submit" class="btn btn-outline-success  float-right"
+                                               <#if isRegisterForm>value="Create"
                                                <#else>value="Login"
                                                 </#if>>
                                     </div>

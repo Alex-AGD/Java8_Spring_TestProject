@@ -53,7 +53,12 @@ public class RegistrationController {
         assert response != null;
         if (!response.isSuccess()) {
             model.addAttribute("captchaError", "Fill captcha");
+            return "redirect:/registration";
         }
+
+
+
+
 
 
         boolean isConfirmEmpty = StringUtils.isEmpty(passwordConfirm);

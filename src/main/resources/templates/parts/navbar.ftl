@@ -4,20 +4,18 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 
-    <div class="container-fluid">
-        <a href="/" class="navbar-brand"> <img src="img/logo.png"  alt="My Logo">  </a>
 
-<#--    <div class="container-fluid">
-        <a class="navbar-brand" href="/">Main</a>
-    </div>-->
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
+    <div class="container-fluid">
+        <a href="/" class="navbar-brand"> <img src="img/logo.png"  alt="My Logo">  </a>
     </div>
 
-
+    <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
 
@@ -42,6 +40,7 @@
                 <a class="nav-link" href="/user/profile">My Profile</a>
                 </#if>
         </ul>
+    </div>
 
 
         <div class="dropdown  md-2 mr-2 mt-2 mt-md-0 ">

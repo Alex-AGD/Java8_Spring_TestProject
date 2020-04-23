@@ -20,8 +20,10 @@
             </div>
 
             <div class="carousel-caption">
-                <h1 class="display-5"> Programming is</h1>
+                <h1 class="display-5"> Programming it's</h1>
                 <h3 class="display-5"> interesting</h3>
+
+
                 <button type="button" class="btn btn-outline-light"> Посмотреть </button>
                 <button type="button" class="btn btn-warning"> Демо сайта </button>
             </div>
@@ -40,7 +42,7 @@
     <div class="container-fluid" >
         <div class="row jumbotron">
             <div class="col-xs-12 col-sm-12 col-md-9 col-lg col-xl-10">
-                <p class="lead">ust because the footer physically exists at the bottom of a website, doesn’t mean
+                <p class="lead">Just because the footer physically exists at the bottom of a website, doesn’t mean
                     that it’s useless. In the past, a website footer was a place for keyword stuffing before Google
                     eventually penalized the behavior.
                     Now, your website footer is a place to display important information that would otherwise clutter
@@ -49,7 +51,7 @@
             </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                    <a href="#"> <button class="btn btn-success btn-lg" type="button"> Читать далее </button> </a>
+                    <a href="#"> <button class="btn btn-success btn-md" type="button"> Читать далее </button> </a>
                 </div>
 
     </div>
@@ -98,11 +100,13 @@
 
 
     <div class="intro_content">
-        <div class="container">
+    <div class="col-xs-12 col-som-6 col-md-4">
+        <div class="container-fluid padding">
             <#if user??>  <h2 class="display-5"> Hello ${name} have a good day :) </h2>
             <#else> <h2 class="display-5"> Hello ${name} Please login </h2>
             </#if>
         </div>
+    </div>
     </div>
 
 

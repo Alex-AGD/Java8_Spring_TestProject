@@ -13,6 +13,7 @@
 
         <link href="css/style.css" rel="stylesheet" type="text/css" />
 
+
         <frame-options policy="SAMEORIGIN"></frame-options>
 
         <#-- плотность пикселей на экр устр-->

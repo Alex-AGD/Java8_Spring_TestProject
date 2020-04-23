@@ -33,7 +33,7 @@
                     </div>
                     <div class="form-group">
                         <label for="input03">Email</label>
-                        <input type="email" name="email" class="form-control" id="input03" placeholder="Enter your email" value="${email}">
+                        <input type="email" name="email" class="form-control" id="input03" placeholder="Enter your email" value="${email! ''}">
                     </div>
                     <div class="form-group">
                         <label for="input04">New Password</label>

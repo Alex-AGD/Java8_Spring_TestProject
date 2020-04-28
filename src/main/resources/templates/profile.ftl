@@ -24,11 +24,11 @@
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="input01">First Name</label>
-                            <input type="text" name="fistName" class="form-control" id="input01" value="${fistName! ''}" required="">
+                            <input type="text" name="fistName" class="form-control" id="input01" value="${fistName! ''}" >
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="input02">Last Name</label>
-                            <input type="text" name="lastName" class="form-control" id="input02" value="${lastName! ''}" required="">
+                            <input type="text" name="lastName" class="form-control" id="input02" value="${lastName! ''}">
                         </div>
                     </div>
                     <div class="form-group">

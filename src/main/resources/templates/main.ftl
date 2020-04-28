@@ -23,9 +23,9 @@
                 <h1 class="display-5"> Programming it's</h1>
                 <h3 class="display-5"> interesting</h3>
 
+                <a href="/main" class="btn btn-primary btn-md enable" role="button" aria-disabled="true">Посмотреть</a>
+                <a href="/portfolio" class="btn btn-success btn-md enable" role="button" aria-disabled="true">Портфолио</a>
 
-                <button type="button" class="btn btn-outline-light"> Посмотреть </button>
-                <button type="button" class="btn btn-warning"> Демо сайта </button>
             </div>
 
             <div class="carousel-item">

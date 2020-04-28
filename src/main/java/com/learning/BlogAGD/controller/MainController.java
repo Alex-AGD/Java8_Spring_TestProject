@@ -22,9 +22,9 @@ public class MainController implements ErrorController {
         return "main";
     }
 
-    @Override
-    public String getErrorPath() {
-        return "/error";
+    @GetMapping("/portfolio")
+    public String portfolio() {
+        return "portfolio";
     }
 
 
@@ -47,6 +47,11 @@ public class MainController implements ErrorController {
                 return "error-403";}
         }
         return "error-404";
+    }
+
+    @Override
+    public String getErrorPath() {
+        return "/error";
     }
 }
 

@@ -13,6 +13,7 @@ body,html{
     -webkit-overflow-scrolling: touch;
 }
 
+
 .navbar-brand img {
     width: 80px;
 }
@@ -209,19 +210,6 @@ body{
     left: 40px;
 }
 
-.neon{
-    text-align: center;
-    width: 300px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 90px;
-    color: #5BE0B3;
-    letter-spacing: 3px;
-    text-shadow: 0 0 5px #6EECC1;
-    animation: flux 2s linear infinite;
-
-}
 .trash{
     width: 170px;
     height: 220px;

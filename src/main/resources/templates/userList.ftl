@@ -1,5 +1,6 @@
 <#import "parts/common.ftl" as common>
 <@common.page>
+<section class="loginV2">
 List of users
 <table>
     <thead>
@@ -21,4 +22,5 @@ List of users
     </#list>
     </tbody>
 </table>
+</section>
 </@common.page>

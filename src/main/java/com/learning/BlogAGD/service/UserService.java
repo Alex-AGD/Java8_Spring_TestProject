@@ -85,6 +85,23 @@ public class UserService implements UserDetailsService {
             mailSender.send(user.getEmail(), "Activation code", message);
         }
     }
+    private void sendChangeMessage(User user) {
+        if (!StringUtils.isEmpty(user.getEmail())) {
+            String message = String.format(
+                    "Hello, %s! \n" +
+                            "You have changed email address \n" + user.getEmail(),
+
+                    user.getUsername(),
+                    hostname,
+                    user.getEmail()
+            );
+
+            mailSender.send(user.getEmail(), "Change email", message);
+        }
+    }
+
+
+
 
     public void deleteUser(User user) {
         userRepo.delete(user);
@@ -120,6 +137,7 @@ public class UserService implements UserDetailsService {
             user.setLastName(lastName);
         }
 
+
         String userEmail = user.getEmail();
 
         boolean isEmailChanged = (email != null && !email.equals(userEmail)) ||
@@ -134,13 +152,16 @@ public class UserService implements UserDetailsService {
         }
 
         if (!StringUtils.isEmpty(password)) {
-            user.setPassword(password);
+            user.setPassword(passwordEncoder.encode(user.getPassword()));
         }
+
 
         userRepo.save(user);
 
         if (isEmailChanged) {
-            sendMessage(user);
+            sendChangeMessage(user);
+
+
         }
     }
 
@@ -156,4 +177,7 @@ public class UserService implements UserDetailsService {
         userRepo.save(user);
         return true;
     }
+
+
+
 }

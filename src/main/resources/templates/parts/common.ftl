@@ -12,6 +12,7 @@
         <title>MyBlog</title>
 
         <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/login.css" rel="stylesheet" type="text/css" />
 
 
         <frame-options policy="SAMEORIGIN"></frame-options>

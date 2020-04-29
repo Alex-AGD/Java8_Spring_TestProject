@@ -30,7 +30,8 @@ public class UserController {
 
     @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("{user}")
-    public String userEditForm(@PathVariable User user, Model model) {
+    public String userEditForm(
+            @PathVariable User user, Model model) {
         model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
 
@@ -56,6 +57,7 @@ public class UserController {
         model.addAttribute("fistName", user.getFistName());
         model.addAttribute("lastName", user.getLastName());
         model.addAttribute("email", user.getEmail());
+        model.addAttribute("password", user.getPassword());
 
         return "profile";
     }

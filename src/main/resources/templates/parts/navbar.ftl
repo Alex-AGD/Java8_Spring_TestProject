@@ -1,9 +1,8 @@
 <#include "common.ftl">
-<#import "login.ftl" as l>
+<#import "loginV2.ftl" as l>
 <#include "security.ftl">
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,8 +11,7 @@
 
     <div class="container-fluid " style="width: 200px">
         <a href="/" class="navbar-brand"> <img src="img/logo.png" alt="Home"> </a>
-        <a href="/portfolio" class="nav-link" >Portfolio </a>
-    </div>
+            </div>
 
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -56,6 +54,7 @@
                 <a class="dropdown-item" href="/user">User list</a>
             </div>
         </div>
+
 
         <@l.logout />
     </div>

@@ -1,113 +1,43 @@
 <#import "parts/common.ftl" as c>
-<#include "parts/security.ftl">
-
 
 <@c.page>
-    <title> Main page</title>
+    <link href="css/portfolio.css" rel="stylesheet" />
 
-<#--сладер-->
-    <div class="carousel slide data-ride=carousel" id="slides">
+    <section class="banner" id="sec">
+        <header>
+            <a href="/" class="logo">Logo </a>
+            <div id="toggle" onclick=" toggle()"  > </div>
+        </header>
 
-        <ul class="carousel-indicators">
-            <li data-target="#slides" data-slide-to="0" class="active"></li>
-            <li data-target="#slides" data-slide-to="1"></li>
-            <li data-target="#slides" data-slide-to="2"></li>
+        <div class="content">
+            <h2> Hello World <br> <span> I'm Dalhapolau Aliaksei </span> </h2>
+            <p>I like to study different programming such as Java, HTML, CSS in and various related frameworks and technologies.</p>
+            <a href="#">Know More </a>
+        </div>
+        <ul class="sci">
+            <li> <a href="https://www.linkedin.com/in/alex-agd"> <img src="img/linkedin.png"> </a></li>
+            <li> <a href="https://vk.com/kageoshi"> <img src="img/vk.png"> </a></li>
         </ul>
+    </section>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/slider1.jpg">
-            </div>
-
-            <div class="carousel-caption">
-                <h1 class="display-5"> Programming it's</h1>
-                <h3 class="display-5"> interesting</h3>
-
-                <a href="/main" class="btn btn-primary btn-md enable" role="button" aria-disabled="true">Посмотреть</a>
-                <a href="/portfolio" class="btn btn-success btn-md enable" role="button" aria-disabled="true">Портфолио</a>
-
-            </div>
-
-            <div class="carousel-item">
-                <img src="img/slider2.jpg">
-            </div>
-
-            <div class="carousel-item">
-                <img src="img/slider3.jpg">
-            </div>
-        </div>
+    <div id="navigation">
+        <ul>
+            <li><a href="/" > Home </a></li>
+            <li><a href="#" > About </a></li>
+            <li><a href="#" > Services </a></li>
+            <li><a href="https://www.linkedin.com/mwlite/in/alex-agd" > Contact </a></li>
+        </ul>
     </div>
 
-<#--основной блок-->
-    <div class="container-fluid" >
-        <div class="row jumbotron">
-            <div class="col-xs-12 col-sm-12 col-md-9 col-lg col-xl-10">
-                <p class="lead">Just because the footer physically exists at the bottom of a website, doesn’t mean
-                    that it’s useless. In the past, a website footer was a place for keyword stuffing before Google
-                    eventually penalized the behavior.
-                    Now, your website footer is a place to display important information that would otherwise clutter
-                    up the rest of your website, and a place to repeat important information. Optimizing your website
-                    footer design can actually lead to increases in conversions and revenue, so don’t neglect it. </p>
-            </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                    <a href="#"> <button class="btn btn-success btn-md" type="button"> Читать далее </button> </a>
-                </div>
-
-    </div>
-  </div>
-
-<#--блок с хар-ками-->
-    <div class="container-fluid">
-        <div class="row text-center alert">
-            <div class="col-12">
-                <h1 class="display-4">Создание сайтов</h1>
-            </div>
-            <hr>
-            <div class="col-12">
-                <p class="lead">About the Author
-                    Maddy Osman loves WordPress and writing. When she’s not busy helping to organize WordCamp Denver,
-                    she shares her best content marketing/SEO tips on her blog, Blogsmith.</p>
-            </div>
-
-        </div>
-    </div>
-
-<#--блок с опис языков-->
-    <div class="container-fluid padding">
-        <div class="row text-center padding">
-            <div class="col-xs-12 col-som-6 col-md-4">
-                <i class="fas fa-code"> </i>
-                <h3>HTML5</h3>
-                <p>Crucial information shouldn’t be “hidden” in the footer because you think people may</p>
-            </div>
-
-            <div class="col-xs-12 col-som-6 col-md-4">
-                <i class="fas fa-bold"> </i>
-                <h3>Bootstrap</h3>
-                <p>Crucial information shouldn’t be “hidden” in the footer because you think people may</p>
-            </div>
-
-            <div class="col-xs-12 col-som-6 col-md-4">
-                <i class="fas fa-css3"> </i>
-                <h3>CSS3</h3>
-                <p>Crucial information shouldn’t be “hidden” in the footer because you think people may</p>
-            </div>
-            <hr class="my-4">
-        </div>
-    </div>
-
-
-
-    <div class="intro_content">
-    <div class="col-xs-12 col-som-6 col-md-4">
-        <div class="container-fluid padding">
-            <#if user??>  <h2 class="display-5"> Hello ${name} have a good day :) </h2>
-            <#else> <h2 class="display-5"> Hello ${name} Please login </h2>
-            </#if>
-        </div>
-    </div>
-    </div>
-
+    <script type="text/javascript">
+        function toggle()
+        {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
 
 </@c.page>
+

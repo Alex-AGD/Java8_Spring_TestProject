@@ -57,10 +57,6 @@ public class RegistrationController {
         }
 
 
-
-
-
-
         boolean isConfirmEmpty = StringUtils.isEmpty(passwordConfirm);
 
         if (isConfirmEmpty) {

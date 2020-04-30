@@ -1,10 +1,9 @@
-
-
-<link href="css/error.css" rel="stylesheet" type="text/css" />
-
-<head><link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link href="css/error.css" rel="stylesheet" type="text/css"/>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
+
 <body>
 <div class="message">You are not authorized.
 </div>

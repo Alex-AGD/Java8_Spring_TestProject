@@ -11,8 +11,9 @@
         <meta charset="UTF-8" />
         <title>MyBlog</title>
 
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/navbar.css" rel="stylesheet" type="text/css" />
         <link href="css/login.css" rel="stylesheet" type="text/css" />
+        <link href="css/neonbtn.css" rel="stylesheet" type="text/css" />
 
 
         <frame-options policy="SAMEORIGIN"></frame-options>

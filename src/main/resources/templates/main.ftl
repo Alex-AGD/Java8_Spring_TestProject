@@ -1,7 +1,8 @@
 <#import "parts/common.ftl" as c>
+<#include "parts/security.ftl">
 
 <@c.page>
-    <link href="css/portfolio.css" rel="stylesheet" />
+    <link href="css/portfolio.css" rel="stylesheet" xmlns="http://www.w3.org/1999/html"/>
 
     <section class="banner" id="sec">
         <header>
@@ -10,9 +11,21 @@
         </header>
 
         <div class="content">
-            <h2> Hello World <br> <span> I'm Dalhapolau Aliaksei </span> </h2>
+            <h2 id="logName"> Hello ${name}<br></h2>
+            <h2> Welcome on my site<br></h2>
+            <#if user??>
+            <#else><h4 id="glitch"> Please login and you can watch full content! <br></h4>
+            </#if>
+
+            <h2><span>I'm Dalhapolau Aliaksei</span></h2>
             <p>I like to study different programming such as Java, HTML, CSS in and various related frameworks and technologies.</p>
-            <a href="#">Know More </a>
+            <a href="/">Know More
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </a>
+
         </div>
         <ul class="sci">
             <li> <a href="https://www.linkedin.com/in/alex-agd"> <img src="img/linkedin.png"> </a></li>

@@ -13,9 +13,10 @@
 </#if>
 
 <div class="d-flex justify-content-end social_icon">
-<span><i class="fab fa-facebook-square"></i></span>
-<span><i class="fab fa-google-plus-square"></i></span>
-<span><i class="fab fa-twitter-square"></i></span>
+<span><i class="fab fa-facebook-f fa-1x"></i></span>
+<span><i class="fab fa-google-plus-square fa-1x"></i></span>
+<span><i class="fab fa-twitter-square fa-1x"></i></span>
+<span><i class="fab fa-github fa-1x"></i></span>
 </div>
 <input type="hidden" name="_csrf" value="${_csrf.token}" />
 

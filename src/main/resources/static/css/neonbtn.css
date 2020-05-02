@@ -18,7 +18,8 @@
 {
     filter: hue-rotate(290deg);
 }
-.content a:nth-child(2) /*change col*/
+
+.content a:nth-child(3) /*change col*/
 {
     filter: hue-rotate(110deg);
 }

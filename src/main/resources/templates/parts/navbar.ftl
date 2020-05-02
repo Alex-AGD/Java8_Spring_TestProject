@@ -9,7 +9,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="container-fluid " style="width: 200px">
+    <div class="container-fluid " style="width: 700px">
         <a href="/" class="navbar-brand"> <img src="img/logo.png" alt="Home"> </a>
             </div>
 

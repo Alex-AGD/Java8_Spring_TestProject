@@ -35,7 +35,7 @@
     </head>
 
     <body>
-    <#include "navbar.ftl">
+    <#include "navbarvV2.ftl">
     <#nested>
 
     <!-- Optional JavaScript -->

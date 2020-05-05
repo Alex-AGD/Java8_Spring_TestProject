@@ -15,18 +15,18 @@
                 <li class="nav-item neu-nav-item active">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item neu-nav-item">
+                <#--<li class="nav-item neu-nav-item">
                     <a class="nav-link" href="#">Link</a>
-                </li>
+                </li>-->
                 <li class="nav-item dropdown neu-nav-item">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        UserInfo
                     </a>
                     <div class="dropdown-menu neu-dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item neu-dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item neu-dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item neu-dropdown-item" href="/user/profile">Profile</a>
+                        <a class="dropdown-item neu-dropdown-item" href="/user">UserList</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item neu-dropdown-item" href="#">Something else here</a>
+                        <#--<a class="dropdown-item neu-dropdown-item" href="#">Something else here</a>-->
                     </div>
                 </li>
             </ul>

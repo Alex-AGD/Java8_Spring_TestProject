@@ -18,7 +18,13 @@
             </#if>
 
             <h2><span>I'm Dalhapolau Aliaksei</span></h2>
-            <p>I like to study different programming such as Java, HTML, CSS in and various related frameworks and technologies.</p>
+            <p> This project site was created for the purpose of studying
+                programming and various frameworks.
+                The basis of this app is Jawa8.
+                Various technologies were used such as:
+                Spring Framework (Spring Boot, Core, MVC, Data,Security, Email, Flyway) Hibirnate,
+                Designing PostgreSQL relation databases
+                HTML, CSS, Bootstrap were used for the frontend.</p>
             <a href="/">Know More
             <span></span>
             <span></span>
